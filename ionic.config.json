@@ -1,0 +1,7 @@
+{
+  "name": "appcv",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
