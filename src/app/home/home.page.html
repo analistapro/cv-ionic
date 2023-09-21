@@ -1,19 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Hello world
-    </ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <p>Biografia</p>
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let pfl of perfil">
+      <ion-icon name="{{pfl.icon}}"></ion-icon>
+      <ion-label>{{pfl.titulo}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

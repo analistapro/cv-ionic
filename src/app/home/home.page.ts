@@ -6,7 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  perfil = [
+    {
+      icon: "person",
+      titulo: "Información Personal"
+    },
+    {
+      icon: "book",
+      titulo: "Educación"
+    },
+    {
+      icon: "ribbon",
+      titulo: "Experiencia Profesional"
+    },
+    {
+      icon: "cog",
+      titulo: "Habilidades"
+    }
+  ];
   constructor() {}
-
 }
